@@ -14,7 +14,7 @@ const blogPosts = [
     title: "The Art of Fine Dining",
     content: `Fine dining is more than just food—it's an experience that engages all your senses and creates lasting memories. From the moment you step through our doors, every detail is carefully orchestrated to provide an unforgettable journey.
 
-The ambiance plays a crucial role in fine dining. Soft lighting, elegant décor, and carefully curated music create an atmosphere of sophistication and comfort. Our staff is trained to provide attentive yet unobtrusive service, ensuring your needs are anticipated before you even realize them.
+The ambiance plays a crucial role in fine dining. Soft lighting, elegant decor, and carefully curated music create an atmosphere of sophistication and comfort. Our staff is trained to provide attentive yet unobtrusive service, ensuring your needs are anticipated before you even realize them.
 
 At the heart of fine dining is, of course, the cuisine. Our chefs approach each dish as a work of art, balancing flavors, textures, and visual presentation. Every ingredient is selected for its quality and freshness, sourced from trusted suppliers who share our commitment to excellence.
 
@@ -201,3 +201,5 @@ export default function BlogDetailPage() {
     </main>
   )
 }
+
+
