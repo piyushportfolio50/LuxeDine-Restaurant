@@ -26,6 +26,10 @@ export async function POST(request: NextRequest) {
     // Generate booking ID
     const bookingId = `RES${Date.now().toString().slice(-6)}`
 
+    // URL ke throug logo lagane ke liye yahan apna link dalein
+    // Example: "https://luxe-dine-restaurant.vercel.app/logo.png"
+    const logoUrl = "https://fascinating-azure-z2iubbmnm0.edgeone.app/22978e28-4d16-44d1-a321-5bf7c038d01b.png"
+
     // Create HTML email template
     const htmlContent = `
     <!DOCTYPE html>
@@ -36,19 +40,22 @@ export async function POST(request: NextRequest) {
     </head>
     <body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5;">
       <div style="max-width: 600px; margin: 0 auto; background-color: #111111; padding: 0;">
-        <!-- Header -->
         <div style="background-color: #111111; padding: 30px; text-align: center; border-bottom: 2px solid #F5A623;">
           <h1 style="color: #F5A623; margin: 0; font-family: Georgia, serif; font-size: 32px;">LuxeDine</h1>
           <p style="color: #888888; margin: 5px 0 0 0; font-size: 14px;">Premium Restaurant</p>
         </div>
         
-        <!-- Main Content -->
         <div style="padding: 40px 30px; background-color: #1a1a1a;">
           <div style="text-align: center; margin-bottom: 30px;">
-            <div style="width: 60px; height: 60px; background-color: #22c55e20; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;">
-              <span style="font-size: 30px;">✓</span>
-            </div>
-            <h2 style="color: #ffffff; font-family: Georgia, serif; font-size: 28px; margin: 20px 0 10px 0;">Reservation Confirmed!</h2>
+            
+            <img 
+              src="${logoUrl}" 
+              alt="LuxeDine Logo" 
+              style="width: 90px; height: auto; margin-bottom: 15px; display: inline-block; object-fit: contain;"
+              onerror="this.style.display='none';"
+            />
+            
+            <h2 style="color: #ffffff; font-family: Georgia, serif; font-size: 28px; margin: 10px 0 10px 0;">Reservation Confirmed!</h2>
             <p style="color: #888888; font-size: 16px; margin: 0;">Thank you for choosing LuxeDine</p>
           </div>
           
@@ -57,7 +64,6 @@ export async function POST(request: NextRequest) {
             We are delighted to confirm your reservation at LuxeDine. We look forward to providing you with an exceptional dining experience.
           </p>
           
-          <!-- Booking Details Table -->
           <div style="background-color: #222222; padding: 25px; border-radius: 8px; border: 1px solid #333333;">
             <h3 style="color: #F5A623; font-size: 18px; margin: 0 0 20px 0; padding-bottom: 15px; border-bottom: 1px solid #333333;">Booking Details</h3>
             
@@ -99,7 +105,6 @@ export async function POST(request: NextRequest) {
             </table>
           </div>
           
-          <!-- Important Notes -->
           <div style="background-color: #F5A62310; border-left: 4px solid #F5A623; padding: 15px 20px; margin-top: 25px; border-radius: 0 8px 8px 0;">
             <p style="color: #F5A623; font-weight: bold; margin: 0 0 10px 0; font-size: 14px;">Important Notes:</p>
             <ul style="color: #cccccc; font-size: 14px; margin: 0; padding-left: 20px; line-height: 1.8;">
@@ -110,19 +115,18 @@ export async function POST(request: NextRequest) {
           </div>
         </div>
         
-        <!-- Footer -->
         <div style="background-color: #111111; padding: 30px; text-align: center; border-top: 1px solid #333333;">
           <p style="color: #888888; font-size: 14px; margin: 0 0 10px 0;">
             <strong style="color: #F5A623;">LuxeDine Restaurant</strong>
           </p>
           <p style="color: #666666; font-size: 12px; margin: 0 0 5px 0;">
-            123 Gourmet Street, Fine Dining District
+           123 Luxe Dine, Scheme 78,Vijay Nagar, Indore 452015
           </p>
           <p style="color: #666666; font-size: 12px; margin: 0 0 15px 0;">
-            Phone: +91 98765 43210 | Email: reservations@luxedine.com
+            Phone: +91 97520 07833 | Email: narendrasingh@restaurant.com
           </p>
           <p style="color: #444444; font-size: 11px; margin: 0;">
-            © ${new Date().getFullYear()} LuxeDine. All rights reserved.
+            © 2026 Narendra's Restaurant. All Rights Reserved.
           </p>
         </div>
       </div>
@@ -140,10 +144,10 @@ export async function POST(request: NextRequest) {
       })
     }
 
-    return NextResponse.json({ 
-      success: true, 
+    return NextResponse.json({
+      success: true,
       bookingId,
-      message: "Reservation confirmed successfully" 
+      message: "Reservation confirmed successfully"
     })
   } catch (error) {
     console.error("Reservation email error:", error)
