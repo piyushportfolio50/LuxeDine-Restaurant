@@ -367,7 +367,7 @@ const generateUpiLink = () => {
                                 Amount: <span className="text-[#F5A623]">₹{total.toLocaleString()}</span>
                               </p>
                               <p className="text-gray-400 text-sm mb-4">
-                                UPI ID: <span className="text-white">Narendra Singh Khutpaliya
+                                UPI ID: <span className="text-white">Pawan Baviskar 
                                   <img
                                     src="https://img.icons8.com/?size=100&id=98A4yZTt9abw&format=png&color=000000"
                                     alt="UPI Icon"
