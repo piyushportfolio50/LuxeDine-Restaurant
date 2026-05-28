@@ -86,9 +86,9 @@ export default function CheckoutPage() {
   }
 
   // Generate UPI link
-  const generateUpiLink = () => {
-    return `upi://pay?pa=9752007833-4@ybl&pn=LuxeDine&am=${total}&cu=INR&tn=LuxeDine+Order`
-  }
+const generateUpiLink = () => {
+  return `upi://pay?pa=8349400597-1@naviaxis&pn=LuxeDine&am=${total}&cu=INR&tn=LuxeDine+Order`
+}
 
   // Generate QR code URL
   const generateQrUrl = () => {
