@@ -154,7 +154,7 @@ const generateUpiLink = () => {
             className="text-center"
           >
             <h1 className="font-serif text-4xl md:text-5xl font-bold text-white mb-4 tracking-wide">
-              Our Location
+              Check Out Page 
             </h1>
             <div className="flex items-center justify-center gap-2 text-gray-300 text-sm font-medium">
               <Link href="/" className="hover:text-[#F5A623] transition-colors">Home</Link>
