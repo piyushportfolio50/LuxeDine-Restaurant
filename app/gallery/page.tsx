@@ -11,17 +11,17 @@ import { X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react"
 const categories = ["All", "Food", "Interior", "Events"]
 
 const galleryImages = [
-  { id: "1", src: "https://i.pinimg.com/736x/53/43/97/534397daa7e7644ce809651013a40b23.jpg", category: "Food", title: "Grilled Steak" },
-  { id: "2", src: "https://i.pinimg.com/736x/48/98/3e/48983e3d343694dd9b780b9651e8793d.jpg", category: "Interior", title: "Restaurant Ambiance" },
-  { id: "3", src: "https://i.pinimg.com/736x/d7/57/aa/d757aaadf9cb57a72ee0143984c7338b.jpg", category: "Food", title: "Fresh Salad" },
+  { id: "1", src: "https://i.pinimg.com/736x/53/43/97/534397daa7e7644ce809651013a40b23.jpg", category: "Food", title: "Special Thali" },
+  { id: "2", src: "https://i.pinimg.com/736x/48/98/3e/48983e3d343694dd9b780b9651e8793d.jpg", category: "Interior", title: "Seating Areas" },
+  { id: "3", src: "https://i.pinimg.com/736x/d7/57/aa/d757aaadf9cb57a72ee0143984c7338b.jpg", category: "Food", title: "Famous Gulab Jamun" },
   { id: "4", src: "https://images.openai.com/static-rsc-4/wWEFDg8OIPAQMgJvHNbfXzUFBITyfIZf6KEpik4TpiiFR2PmwpiLjhcGq9DhnRV7V01XimtI1qkUger5OQLnyFof7kGiUzAbOErHQjJi1wHpr0H2qM8JTMzVQriLsuGb6Pb_eyef2BjFQ3EE5ZnI4FEktr2Dros59YcwILV304U?purpose=inline", category: "Events", title: "Private Dining" },
-  { id: "5", src: "https://i.pinimg.com/736x/d3/80/9b/d3809bfeffa85090cbfe9028bc099f66.jpg", category: "Food", title: "Gourmet Dessert" },
-  { id: "6", src: "https://i.pinimg.com/736x/7f/d5/bb/7fd5bb5cdc861b4b044b6e9770d66fb8.jpg", category: "Interior", title: "Bar Area" },
-  { id: "7", src: "https://i.pinimg.com/736x/13/d4/e5/13d4e5777a92df586a9cc7de1aad488a.jpg", category: "Food", title: "Seafood Platter" },
-  { id: "8", src: "https://images.openai.com/static-rsc-4/lzOpM8Ljr-XS6L0Ye3TrvciZkqgFKmcOI9XpXPtV8aPGRYBR05Ec3aEQ9EL0TDhU1a8CbbscUO3XpkV0RWZrOjgUnzBIDAgn9Nq0Nm-IZpxe9pwaondCegAHwbtfgxcyeLtktdi7FfLuTWfqmRmyrbpn1Vgp0k7FJRrpAo7WUlc?purpose=inline", category: "Events", title: "Wine Tasting" },
+  { id: "5", src: "https://i.pinimg.com/736x/d3/80/9b/d3809bfeffa85090cbfe9028bc099f66.jpg", category: "Food", title: "Soft Panner Masala" },
+  { id: "6", src: "https://i.pinimg.com/736x/7f/d5/bb/7fd5bb5cdc861b4b044b6e9770d66fb8.jpg", category: "Interior", title: "Family get-together Area" },
+  { id: "7", src: "https://i.pinimg.com/736x/13/d4/e5/13d4e5777a92df586a9cc7de1aad488a.jpg", category: "Food", title: "Softed Khammand" },
+  { id: "8", src: "https://images.openai.com/static-rsc-4/lzOpM8Ljr-XS6L0Ye3TrvciZkqgFKmcOI9XpXPtV8aPGRYBR05Ec3aEQ9EL0TDhU1a8CbbscUO3XpkV0RWZrOjgUnzBIDAgn9Nq0Nm-IZpxe9pwaondCegAHwbtfgxcyeLtktdi7FfLuTWfqmRmyrbpn1Vgp0k7FJRrpAo7WUlc?purpose=inline", category: "Events", title: "Birthday Party Halls" },
   { id: "9", src: "https://i.pinimg.com/736x/10/d7/48/10d7485fa9bac4a6f1b85d9f47407ac4.jpg", category: "Food", title: "Chef Special" },
   { id: "10", src: "https://i.pinimg.com/1200x/90/44/9f/90449fbfcf31924cd303d290a7b94f8e.jpg", category: "Interior", title: "Lounge Area" },
-  { id: "11", src: "https://i.pinimg.com/1200x/ea/5c/c5/ea5cc5ccdb3abd8807c21b26fed3e4b5.jpg", category: "Food", title: "Appetizer Plate" },
+  { id: "11", src: "https://i.pinimg.com/1200x/ea/5c/c5/ea5cc5ccdb3abd8807c21b26fed3e4b5.jpg", category: "Food", title: "Special Idli plater" },
   { id: "12", src: "https://images.openai.com/static-rsc-4/JH-rWwS-VxzxCSm2JEk8uzeik1y7TLsX44m1_lfvMxwQIBADupfmPKSxUBk4IVD5mAKAdocoMO92jTWY0ZINrshpEx9BmUwrwZ1fYIsnqkEckNoaxpN_0gpR1MAdGbPLGOioEtSNSYPwDa3MhLkZFFUXdAJTxVWOqAacFq7sEqXazj_5bER-i1ZmaPkl2EUu?purpose=inline", category: "Events", title: "Live Music Night" },
 ]
 
