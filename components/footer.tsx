@@ -53,7 +53,7 @@ export function Footer() {
             <h3 className="text-[#F5A623] font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>+91 97520-07833</li>
-              <li>narendrasingh@restaurant.com</li>
+              <li>Luxedinerestaurant@gamil.com</li>
               <li>123 Luxe Dine, Scheme 78,</li>
               <li>Vijay Nagar, Indore 452015</li>
               <li className="pt-2">Mon - Sun : 10:00 AM - 11:00 PM</li>
